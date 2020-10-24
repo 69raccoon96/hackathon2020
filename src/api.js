@@ -84,3 +84,17 @@ export const addPlace = async (place, user)=>{
         }
     });
 }
+
+/*IPromise
+* Sending PATCH req to change state of place fav/unfav
+* Input: Place{name:""}, isFav: bool, user{token:""}
+* Result: {config:{}, data:{token:""}, headers:{}, status: int}
+*/
+export const setFavourite = async (place, isFav, user)=>{
+    return ax.patch("set_favourite",{
+        "name":place.name,
+        "is_favourite": isFav
+    },{
+        "Authorization": "GeoAssist "+ user.token
+    });
+}
