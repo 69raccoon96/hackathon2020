@@ -12,7 +12,15 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.box{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background:linear-gradient(rgb(0, 197, 206),transparent);
+  background-color: #00e773 /*this your primary color*/
 
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
