@@ -2,11 +2,13 @@ import './App.css';
 import './Register.js'
 import Register from "./Register";
 import Main from "./Main";
+import {Router} from 'react-router-dom'
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-          <Register></Register>
+          <Main></Main>
           {/*<div className="box">*/}
           {/*    <UpperRow></UpperRow>*/}
           {/*    <div className="middle-part-startpage">*/}
