@@ -17,7 +17,8 @@
   height: 100%;
   width: 100%;
   background-size: cover;
-  background:linear-gradient(rgb(0, 197, 206),transparent);
+  background: linear-gradient(to left top, #00e773, #00C5CE);
+  /*background:linear-gradient(rgb(0, 197, 206),transparent);*/
   background-color: #00e773 /*this your primary color*/
 
 }
