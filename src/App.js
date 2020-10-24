@@ -1,12 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-
 function App() {
   return (
     <div className="App">
       <header className="App-header">
           <div className="box">
               <UpperRow></UpperRow>
+              <div className="middle-part-startpage">
+                  <div className="middle-part-tet">
+                      ИЩЕШЬ<br/>МАГАЗИН?</div>
+                  <button className="middle-part-button">
+                      <div className="middle-part-text">ищу!</div></button>
+              </div>
+              <div className="bottom-block">
+                  <button className="bottom-button">Любимые места</button>
+                  <button className="bottom-button">История посещений</button>
+              </div>
           </div>
       </header>
     </div>
@@ -21,7 +29,7 @@ const UpperRow = ({ logged }) => {
 
                 </div>
                 <button className="not-auth-button">
-                    <span className="not-auth-button-text">Имя</span>
+                    <span className="not-auth-button-text">ИМЯ</span>
                 </button>
             </div>
         );
@@ -29,7 +37,9 @@ const UpperRow = ({ logged }) => {
     return (
         <div className="upper-row">
         <div className="not-auth-box">
-            <div className="not-auth-text">ВЫ НЕ АВТОРИЗОВАНЫ</div>
+            <div className="not-auth-text">
+                ВЫ НЕ АВТОРИЗОВАНЫ
+                </div>
 
         </div>
             <button className="not-auth-button">
