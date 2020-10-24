@@ -12,6 +12,13 @@
   }
 }
 
+.auth-button
+{
+  display: flex;
+
+}
+
+
 .upper-row
 {
 
@@ -20,11 +27,25 @@
   justify-content: space-between;
   margin-top: 10%;
 }
+
+.auth-link-text{
+  color: rgba(8, 89, 70, 1);
+  font-size: 4.2vmin;
+  margin-top: 0.22rem ;
+}
+
+.auth1-link-text{
+  color: rgba(233, 255, 223, 1);
+  font-size: 4.2vmin;
+  margin-top: 0.22rem ;
+}
+
 .not-auth-box
 {
   display: flex;
-  width: 192px;
+  width: 48vmin;
   margin-left: 5%;
+  margin-top: 2vmin;
   background: rgba(225, 255, 211, 0.9);
   border-radius: 7px;
   justify-content: center;
@@ -61,14 +82,16 @@
 }
 .not-auth-button
 {
-  margin-left: 5%;
-  flex-basis: 100px;
-  height: 40px;
-  margin-right: 5%;
+  height: 11vmin;
+  width: 16vmin;
   outline: none !important;
   border: 0 !important;
   background: #177A62;
-  border-radius: 9px;
+  border-radius: 1.2vmin;
+  display: flex;
+  margin-top: 2vmin;
+  margin-left: 25vmin;
+  justify-content: space-evenly;
 }
 .text
 {

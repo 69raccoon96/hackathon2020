@@ -1,6 +1,10 @@
 import './App.css';
 import './Register.js'
 import Register from "./Register";
+import TopperContainer from "./TopperContainer";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import React from "react";
+
 function App() {
   return (
     <div className="App">
@@ -30,14 +34,15 @@ function App() {
 const UpperRow = ({ logged }) => {
     if (true) {
         return (
-            <div className="upper-row">
-                <div className="not-auth-box">
+            <div className="col-lg-4 col-">
+                <TopperContainer/>
+                {/*<div className="not-auth-box">
                     <div className="not-auth-text">ВЫ АВТОРИЗОВАНЫ</div>
 
                 </div>
                 <button className="not-auth-button">
                     <span className="not-auth-button-text">ИМЯ</span>
-                </button>
+                </button>*/}
             </div>
         );
     }
