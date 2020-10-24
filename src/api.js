@@ -16,7 +16,7 @@ export const GetUser = (id = 0) => {
     });
 }
 /*
-* Returns altitude and longitude by {}
+* Returns altitude and longitude by {}np,
 * */
 export const Location = async () => {
     return  UserIP().then(res => {
