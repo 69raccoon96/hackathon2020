@@ -1,6 +1,7 @@
 import "./Register.css"
-import { Icon, Input } from "semantic-ui-react";
+import {Icon, Input} from "semantic-ui-react";
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function Register() {
     return (
@@ -9,18 +10,18 @@ function Register() {
                 <div className="text-reg"> АВТОРИЗАЦИЯ</div>
                 <hr className="box-line"/>
                 <div className="box-data">
-                <div className="box-before-mail">
-                <div className="box-mail">
-                    <Icon name="mail" color="grey" />
-                    <input className="input-box" value="Почта"/>
-                </div>
-                </div>
-                <div className="box-before-mail">
-                    <div className="box-mail">
-                        <Icon name="key" color="grey" />
-                        <input className="input-box" type="password" value="Пароль"/>
+                    <div className="box-before-mail">
+                        <div className="box-mail">
+                            <Icon name="mail" color="grey"/>
+                            <input className="input-box" value="Почта"/>
+                        </div>
                     </div>
-                </div>
+                    <div className="box-before-mail row-1">
+                        <div className="box-mail">
+                            <Icon name="key" color="grey"/>
+                            <input className="input-box" type="password" value="Пароль"/>
+                        </div>
+                    </div>
                 </div>
                 <div className="row-register">
                     <div className="rememberCheckbox">
@@ -31,5 +32,6 @@ function Register() {
                 </div>
             </div>
         </div>
-    )};
+    )
+}
 export default Register;

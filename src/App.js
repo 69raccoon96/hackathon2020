@@ -1,6 +1,7 @@
 import './App.css';
 import './Register.js'
 import Register from "./Register";
+import Main from "./Main";
 function App() {
   return (
     <div className="App">
@@ -27,32 +28,5 @@ function App() {
     </div>
   );
 }
-const UpperRow = ({ logged }) => {
-    if (true) {
-        return (
-            <div className="upper-row">
-                <div className="not-auth-box">
-                    <div className="not-auth-text">ВЫ АВТОРИЗОВАНЫ</div>
 
-                </div>
-                <button className="not-auth-button">
-                    <span className="not-auth-button-text">ИМЯ</span>
-                </button>
-            </div>
-        );
-    }
-    return (
-        <div className="upper-row">
-        <div className="not-auth-box">
-            <div className="not-auth-text">
-                ВЫ НЕ АВТОРИЗОВАНЫ
-                </div>
-
-        </div>
-            <button className="not-auth-button">
-                <span className="not-auth-button-text">ВОЙТИ</span>
-            </button>
-        </div>
-    );
-};
 export default App;
