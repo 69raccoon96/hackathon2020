@@ -26,8 +26,65 @@
 }
 .button-login
 {
+    width: 92px;
+    height: 29px;
+    background: rgba(23, 122, 98, 0.9);
+    border-radius: 9px;
+    border: 0 !important;
+    margin-right: 5%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    color: #E9FFDF;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.text-remember
+{
+    margin-left: 1em;
+    margin-right: -1em;
+    display: flex;
+    align-self: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.45);
+}
+.row-register
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+.checkbox-round {
+    display: flex;
+    width: 1.3em;
+    height: 1.3em;
+    background-color: rgb(213,249,217);
+    border-radius: 50%;
+    border: 1px solid;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    border-color: rgb(0,105,71);;
+}
+
+.checkbox-round:checked {
+    background-color: rgb(0,105,71);
+}
+.button-login-field
+{
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 5%;
 }
 .box-before-mail {
     display: flex;
@@ -58,6 +115,8 @@
 
 .text-reg
 {
+    margin-top: 5%;
+    margin-bottom: 5%;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
@@ -65,4 +124,15 @@
     text-align: center;
 
     color: #085946;
+}
+.rememberCheckbox
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.box-line
+{
+    width: 90%;
+    border: 1px solid rgba(23, 101, 82, 0.3);
 }
