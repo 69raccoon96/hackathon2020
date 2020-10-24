@@ -15,7 +15,9 @@ export const GetUser = (id = 0) => {
         return res.data;
     });
 }
-
+/*
+* Returns altitude and longitude by {}
+* */
 export const Location = async () => {
     return  UserIP().then(res => {
         return ipX.get(res+"?access_key=e648314645aecec0fa722f1f1ee67825")
@@ -30,6 +32,11 @@ export const UserIP = async() =>{
         .then(data => {return data.data.ip})
 }
 
+/* IPromise
+* Sending POST req to register User
+* Input: user{email:"", password:"", lastname:"", firstname:""
+* Output: {config:{}, data:{token:""}, headers:{}, status: int}
+*/
 export const Register = async (user) => {
     return ax.post("register",{
         "email":user.email,
@@ -45,14 +52,35 @@ export const Register = async (user) => {
     });
 }
 
-export const Auth = async (userToken, email, password) =>{
+
+/*IPromise
+* Sending POST req to auth User by email, password
+* Input: user{email:"", password:""}
+* Result: {config:{}, data:{token:""}, headers:{}, status: int}
+*/
+export const Auth = async (user) =>{
     return ax.post("auth",{
-        "email":email,
-        "password":password
+        "email":user.email,
+        "password":user.password
     },
         {
         headers:{
-            "Authorization": "GeoAssist "+userToken
+            "Authorization": "GeoAssist "+user.token
+        }
+    });
+}
+/*IPromise
+* Sending POST req to register as favourite user place
+* Input: Place{name:"", category:""}, user{token:""}
+* Result: {config:{}, data:{token:""}, headers:{}, status: int}
+*/
+export const addPlace = async (place, user)=>{
+    return ax.post("add_place",{
+        "name": place.name,
+        "category": place.category
+    },{
+        headers:{
+            "Authorization": "GeoAssist "+user.token
         }
     });
 }
