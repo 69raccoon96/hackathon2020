@@ -5,9 +5,9 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function Register() {
     return (
-        <div className="row">
-            <div className="box-reg row-1">
-                <div className="text-reg"> Авторизация</div>
+        <div className="box">
+            <div className="box-reg">
+                <div className="text-reg"> АВТОРИЗАЦИЯ</div>
                 <hr className="box-line"/>
                 <div className="box-data">
                     <div className="box-before-mail">
@@ -23,8 +23,12 @@ function Register() {
                         </div>
                     </div>
                 </div>
-                <div className="button-login">
-                    <button>Войти</button>
+                <div className="row-register">
+                    <div className="rememberCheckbox">
+                        <input type="checkbox" id="checkbox" className="checkbox-round"/>
+                        <div className="text-remember">Запомнить</div>
+                    </div>
+                        <button className="button-login">ВОЙТИ</button>
                 </div>
             </div>
         </div>
