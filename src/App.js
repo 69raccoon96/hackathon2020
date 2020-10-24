@@ -1,10 +1,15 @@
 import './App.css';
+import TopperContainer from "./TopperContainer";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import React from "react";
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
           <div className="box">
-              <UpperRow></UpperRow>
+              <TopperContainer/>
+
               <div className="middle-part-startpage">
                   <div className="middle-part-tet">
                       ИЩЕШЬ<br/>МАГАЗИН?</div>
@@ -27,14 +32,15 @@ function App() {
 const UpperRow = ({ logged }) => {
     if (true) {
         return (
-            <div className="upper-row">
-                <div className="not-auth-box">
+            <div className="col-lg-4 col-">
+                <TopperContainer/>
+                {/*<div className="not-auth-box">
                     <div className="not-auth-text">ВЫ АВТОРИЗОВАНЫ</div>
 
                 </div>
                 <button className="not-auth-button">
                     <span className="not-auth-button-text">ИМЯ</span>
-                </button>
+                </button>*/}
             </div>
         );
     }
