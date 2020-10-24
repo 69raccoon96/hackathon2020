@@ -33,6 +33,7 @@
 }
 .not-auth-button
 {
+  margin-left: 5%;
   flex-basis: 100px;
   height: 40px;
   margin-right: 5%;
