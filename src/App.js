@@ -1,26 +1,55 @@
 import './App.css';
-import './Register.js'
-import Register from "./Register";
-import Main from "./Main";
-import Categories from "./Categories.js"
-import Favorite from "./Favorite";
-import {Router} from 'react-router-dom'
-
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-          <Main></Main>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <header className="App-header">
+                <div className="box">
+                    <UpperRow></UpperRow>
+                    <div className="middle-part-startpage">
+                        <div className="middle-part-tet">
+                            ИЩЕШЬ<br/>МАГАЗИН?</div>
+                        <button className="middle-part-button">
+                            <div className="middle-part-text">ищу!</div></button>
+                    </div>
+                    <div className="bottom-block">
+                        <button className="bottom-button">
+                            <div className="bottom-button-text">Любимые места</div>
+                        </button>
+                        <button className="bottom-button">
+                            <div className="bottom-button-text">История посещений</div>
+                        </button>
+                    </div>
+                </div>
+            </header>
+        </div>
+    );
 }
-function Greeting(props) {
-    const isLoggedIn = props.isLoggedIn;
-    if (isLoggedIn) {
-        return <Register />;
-    }
-    return <Main />;
-}
+const UpperRow = ({ logged }) => {
+    if (true) {
+        return (
+            <div className="upper-row">
+                <div className="not-auth-box">
+                    <div className="not-auth-text">ВЫ АВТОРИЗОВАНЫ</div>
 
+                </div>
+                <button className="not-auth-button">
+                    <span className="not-auth-button-text">ИМЯ</span>
+                </button>
+            </div>
+        );
+    }
+    return (
+        <div className="upper-row">
+            <div className="not-auth-box">
+                <div className="not-auth-text">
+                    ВЫ НЕ АВТОРИЗОВАНЫ
+                </div>
+
+            </div>
+            <button className="not-auth-button">
+                <span className="not-auth-button-text">ВОЙТИ</span>
+            </button>
+        </div>
+    );
+};
 export default App;

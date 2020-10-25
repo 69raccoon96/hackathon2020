@@ -1,4 +1,4 @@
-.App {
+App {
   text-align: center;
 }
 .App-logo {
@@ -12,12 +12,9 @@
   }
 }
 
-
 .upper-row
 {
-  position: -ms-device-fixed;
-  top: 10px;
-  right: 100px;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -85,7 +82,7 @@
   font-size: 14px;
   line-height: 15px;
   color: #085946;
-
+margin-left: 10%;
 }
 .not-auth-button-text
 {
@@ -104,6 +101,8 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 19px;
+  text-align: center;
+
   color: #004A41;
 }
 .middle-part-tet{
@@ -132,8 +131,17 @@
   margin-top: 5%;
 }
 .box{
-  position: absolute;
-  background: #00e773 linear-gradient(to left top, #00e773, #00C5CE);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background: linear-gradient(to left top, #00e773, #00C5CE);
+  /*background:linear-gradient(rgb(0, 197, 206),transparent);*/
+  background-color: #00e773 /*this your primary color*/
+
 }
 .App-header {
   background-color: #282c34;
