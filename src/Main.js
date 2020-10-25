@@ -1,35 +1,55 @@
-import React, {Component} from 'react';
-import UpperRow from "./UpperRow";
-import 'bootstrap/dist/css/bootstrap.min.css'
-
-class Main extends Component{
-
-
-    render(){
-        return(
-
-            <div className="container box">
-                <div className="row ">
-                    <UpperRow/>
-                </div>
-                <div className="row middle-part-startpage align-content-md-center mb-5">
-                    <div className="middle-part-tet">
-                        ИЩЕШЬ<br/>МАГАЗИН?
+import './App.css';
+function Main() {
+    return (
+        <div className="App">
+            <header className="App-header">
+                <div className="box">
+                    <UpperRow></UpperRow>
+                    <div className="middle-part-startpage">
+                        <div className="middle-part-tet">
+                            ИЩЕШЬ<br/>МАГАЗИН?</div>
+                        <button className="middle-part-button">
+                            <div className="middle-part-text">ищу!</div></button>
                     </div>
-                    <button className="middle-part-button">
-                        <div className="middle-part-text">ищу!</div></button>
+                    <div className="bottom-block">
+                        <button className="bottom-button">
+                            <div className="bottom-button-text">Любимые места</div>
+                        </button>
+                        <button className="bottom-button">
+                            <div className="bottom-button-text">История посещений</div>
+                        </button>
+                    </div>
                 </div>
-                <div className="row-cols-md-1 bottom-block mb-5">
-                    <button className="bottom-button">
-                        <div className="bottom-button-text">Любимые места</div>
-                    </button>
-                    <button className="bottom-button">
-                        <div className="bottom-button-text">История посещений</div>
-                    </button>
-                </div>
-            </div>
-        )
-    }
+            </header>
+        </div>
+    );
 }
+const UpperRow = ({ logged }) => {
+    if (true) {
+        return (
+            <div className="upper-row">
+                <div className="not-auth-box">
+                    <div className="not-auth-text">ВЫ АВТОРИЗОВАНЫ</div>
 
+                </div>
+                <button className="not-auth-button">
+                    <span className="not-auth-button-text">ИМЯ</span>
+                </button>
+            </div>
+        );
+    }
+    return (
+        <div className="upper-row">
+            <div className="not-auth-box">
+                <div className="not-auth-text">
+                    ВЫ НЕ АВТОРИЗОВАНЫ
+                </div>
+
+            </div>
+            <button className="not-auth-button">
+                <span className="not-auth-button-text">ВОЙТИ</span>
+            </button>
+        </div>
+    );
+};
 export default Main;
