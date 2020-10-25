@@ -132,6 +132,7 @@
   margin-top: 5%;
 }
 .box{
+  position: absolute;
   background: #00e773 linear-gradient(to left top, #00e773, #00C5CE);
 }
 .App-header {

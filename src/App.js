@@ -4,11 +4,13 @@ import Register from "./Register";
 import Main from "./Main";
 import Categories from "./Categories.js"
 import Favorite from "./Favorite";
+import {Router} from 'react-router-dom'
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-          <Favorite></Favorite>
+          <Main></Main>
       </header>
     </div>
   );
