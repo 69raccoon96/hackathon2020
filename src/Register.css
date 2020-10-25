@@ -1,0 +1,138 @@
+.box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background: linear-gradient(to left top, #00e773, #00C5CE);
+    /*background:linear-gradient(rgb(0, 197, 206),transparent);*/
+    background-color: #00e773 /*this your primary color*/
+}
+.input-box
+{
+    background: rgba(166, 213, 172, 0.47);
+    border: 0px;
+}
+.box-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch
+
+}
+.button-login
+{
+    width: 92px;
+    height: 29px;
+    background: rgba(23, 122, 98, 0.9);
+    border-radius: 9px;
+    border: 0 !important;
+    margin-right: 5%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    color: #E9FFDF;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.text-remember
+{
+    margin-left: 1em;
+    margin-right: -1em;
+    display: flex;
+    align-self: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 15px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.45);
+}
+.row-register
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+.checkbox-round {
+    display: flex;
+    width: 1.3em;
+    height: 1.3em;
+    background-color: rgb(213,249,217);
+    border-radius: 50%;
+    border: 1px solid;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    border-color: rgb(0,105,71);;
+}
+
+.checkbox-round:checked {
+    background-color: rgb(0,105,71);
+}
+.button-login-field
+{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 5%;
+}
+.box-before-mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.box-mail
+{
+    width: 50%;
+    color: rgba(166, 213, 172, 0.47);
+    border-radius: 6px;
+    align-items: baseline;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.box-reg
+{
+
+    width: 80%;
+    background: rgba(231, 252, 221, 0.92);
+    border-radius: 20px;
+}
+
+.text-reg
+{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 26px;
+    text-align: center;
+
+    color: #085946;
+}
+.rememberCheckbox
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.box-line
+{
+    width: 90%;
+    border: 1px solid rgba(23, 101, 82, 0.3);
+}
